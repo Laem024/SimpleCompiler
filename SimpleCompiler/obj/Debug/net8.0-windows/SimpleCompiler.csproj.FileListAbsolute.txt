@@ -1,0 +1,16 @@
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\bin\Debug\net8.0-windows\SimpleCompiler.exe
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\bin\Debug\net8.0-windows\SimpleCompiler.deps.json
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\bin\Debug\net8.0-windows\SimpleCompiler.runtimeconfig.json
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\bin\Debug\net8.0-windows\SimpleCompiler.dll
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\bin\Debug\net8.0-windows\SimpleCompiler.pdb
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.Form1.resources
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.csproj.GenerateResource.cache
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.AssemblyInfoInputs.cache
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.AssemblyInfo.cs
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.csproj.CoreCompileInputs.cache
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.dll
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\refint\SimpleCompiler.dll
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.pdb
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\SimpleCompiler.genruntimeconfig.cache
+C:\Users\Laem0\Desktop\Cursos\utesa\C#\SimpleCompiler\SimpleCompiler\obj\Debug\net8.0-windows\ref\SimpleCompiler.dll
