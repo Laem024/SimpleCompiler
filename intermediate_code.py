@@ -1,30 +1,3 @@
-# # intermediate_code.py
-# from symbol_table import symbol_table
-
-# def generate_code(tree):
-#     if tree[0] == 'assign':
-#         _, name, expr = tree
-#         code = generate_code(expr)
-#         symbol_table.add(name, code[-1])  # Actualizamos el valor de la variable en la tabla de símbolos
-#         return code + [f'{name} = {code[-1]}']
-#     elif tree[0] in ('+', '-', '*', '/'):
-#         op, left, right = tree
-#         left_code = generate_code(left)
-#         right_code = generate_code(right)
-#         return left_code + right_code + [f'temp = {left_code[-1]} {op} {right_code[-1]}']
-#     elif tree[0] == 'number':
-#         return [str(tree[1])]
-#     elif tree[0] == 'id':
-#         return [tree[1]]
-
-#     return []
-
-# def print_code(intermediate_code):
-#     for line in intermediate_code:
-#         print(line)
-
-
-
 # intermediate_code.py
 from symbol_table import symbol_table
 

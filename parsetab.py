@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'ASSIGN DIVIDE ID LPAREN MINUS NUMBER PLUS RPAREN TIMESstatement : ID ASSIGN expressionstatement : expressionexpression : expression PLUS expression\n                  | expression MINUS expression\n                  | expression TIMES expression\n                  | expression DIVIDE expressionexpression : LPAREN expression RPARENexpression : NUMBERexpression : ID'
+_lr_signature = 'ASSIGN DIVIDE ID LPAREN MINUS NUMBER PLUS RPAREN SEMICOLON TIMESstatement : ID ASSIGN expression SEMICOLONstatement : expression SEMICOLONexpression : expression PLUS expression\n                  | expression MINUS expression\n                  | expression TIMES expression\n                  | expression DIVIDE expressionexpression : LPAREN expression RPARENexpression : NUMBERexpression : ID'
     
-_lr_action_items = {'ID':([0,4,6,7,8,9,10,],[2,12,12,12,12,12,12,]),'LPAREN':([0,4,6,7,8,9,10,],[4,4,4,4,4,4,4,]),'NUMBER':([0,4,6,7,8,9,10,],[5,5,5,5,5,5,5,]),'$end':([1,2,3,5,12,13,14,15,16,17,18,],[0,-9,-2,-8,-9,-1,-3,-4,-5,-6,-7,]),'ASSIGN':([2,],[6,]),'PLUS':([2,3,5,11,12,13,14,15,16,17,18,],[-9,7,-8,7,-9,7,7,7,7,7,-7,]),'MINUS':([2,3,5,11,12,13,14,15,16,17,18,],[-9,8,-8,8,-9,8,8,8,8,8,-7,]),'TIMES':([2,3,5,11,12,13,14,15,16,17,18,],[-9,9,-8,9,-9,9,9,9,9,9,-7,]),'DIVIDE':([2,3,5,11,12,13,14,15,16,17,18,],[-9,10,-8,10,-9,10,10,10,10,10,-7,]),'RPAREN':([5,11,12,14,15,16,17,18,],[-8,18,-9,-3,-4,-5,-6,-7,]),}
+_lr_action_items = {'ID':([0,4,6,8,9,10,11,],[2,13,13,13,13,13,13,]),'LPAREN':([0,4,6,8,9,10,11,],[4,4,4,4,4,4,4,]),'NUMBER':([0,4,6,8,9,10,11,],[5,5,5,5,5,5,5,]),'$end':([1,7,20,],[0,-2,-1,]),'ASSIGN':([2,],[6,]),'SEMICOLON':([2,3,5,13,14,15,16,17,18,19,],[-9,7,-8,-9,20,-3,-4,-5,-6,-7,]),'PLUS':([2,3,5,12,13,14,15,16,17,18,19,],[-9,8,-8,8,-9,8,8,8,8,8,-7,]),'MINUS':([2,3,5,12,13,14,15,16,17,18,19,],[-9,9,-8,9,-9,9,9,9,9,9,-7,]),'TIMES':([2,3,5,12,13,14,15,16,17,18,19,],[-9,10,-8,10,-9,10,10,10,10,10,-7,]),'DIVIDE':([2,3,5,12,13,14,15,16,17,18,19,],[-9,11,-8,11,-9,11,11,11,11,11,-7,]),'RPAREN':([5,12,13,15,16,17,18,19,],[-8,19,-9,-3,-4,-5,-6,-7,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'statement':([0,],[1,]),'expression':([0,4,6,7,8,9,10,],[3,11,13,14,15,16,17,]),}
+_lr_goto_items = {'statement':([0,],[1,]),'expression':([0,4,6,8,9,10,11,],[3,12,14,15,16,17,18,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,13 +27,13 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> statement","S'",1,None,None,None),
-  ('statement -> ID ASSIGN expression','statement',3,'p_statement_assign','parser.py',6),
-  ('statement -> expression','statement',1,'p_statement_expr','parser.py',10),
-  ('expression -> expression PLUS expression','expression',3,'p_expression_binop','parser.py',14),
-  ('expression -> expression MINUS expression','expression',3,'p_expression_binop','parser.py',15),
-  ('expression -> expression TIMES expression','expression',3,'p_expression_binop','parser.py',16),
-  ('expression -> expression DIVIDE expression','expression',3,'p_expression_binop','parser.py',17),
-  ('expression -> LPAREN expression RPAREN','expression',3,'p_expression_group','parser.py',21),
-  ('expression -> NUMBER','expression',1,'p_expression_number','parser.py',25),
-  ('expression -> ID','expression',1,'p_expression_id','parser.py',29),
+  ('statement -> ID ASSIGN expression SEMICOLON','statement',4,'p_statement_assign','parser.py',51),
+  ('statement -> expression SEMICOLON','statement',2,'p_statement_expr','parser.py',56),
+  ('expression -> expression PLUS expression','expression',3,'p_expression_binop','parser.py',60),
+  ('expression -> expression MINUS expression','expression',3,'p_expression_binop','parser.py',61),
+  ('expression -> expression TIMES expression','expression',3,'p_expression_binop','parser.py',62),
+  ('expression -> expression DIVIDE expression','expression',3,'p_expression_binop','parser.py',63),
+  ('expression -> LPAREN expression RPAREN','expression',3,'p_expression_group','parser.py',67),
+  ('expression -> NUMBER','expression',1,'p_expression_number','parser.py',71),
+  ('expression -> ID','expression',1,'p_expression_id','parser.py',75),
 ]

@@ -14,16 +14,25 @@
 #             break
 #         tokens_output.append(str(tok))
     
-#     result = parser.parse(data)
-    
-#     intermediate_code = generate_code(result)
-#     intermediate_code_output = "\n".join(intermediate_code)
+#     try:
+#         result = parser.parse(data)
+#         intermediate_code, _ = generate_code(result)
+#         intermediate_code_output = "\n".join(intermediate_code)
+#         symbol_table_output = str(symbol_table)
+#         parse_tree_output = str(result)
+#         syntax_errors = ""
+#     except Exception as e:
+#         intermediate_code_output = ""
+#         symbol_table_output = ""
+#         parse_tree_output = ""
+#         syntax_errors = str(e)
     
 #     return {
 #         "tokens": "\n".join(tokens_output),
-#         "parse_tree": str(result),
+#         "parse_tree": parse_tree_output,
 #         "intermediate_code": intermediate_code_output,
-#         "symbol_table": str(symbol_table)
+#         "symbol_table": symbol_table_output,
+#         "syntax_errors": syntax_errors
 #     }
 
 # if __name__ == "__main__":
@@ -51,16 +60,25 @@ def run_compiler(data):
             break
         tokens_output.append(str(tok))
     
-    result = parser.parse(data)
-    
-    intermediate_code, _ = generate_code(result)
-    intermediate_code_output = "\n".join(intermediate_code)
+    try:
+        result = parser.parse(data)
+        intermediate_code, _ = generate_code(result)
+        intermediate_code_output = "\n".join(intermediate_code)
+        symbol_table_output = str(symbol_table)
+        parse_tree_output = str(result)
+        syntax_errors = ""
+    except SyntaxError as e:
+        intermediate_code_output = ""
+        symbol_table_output = ""
+        parse_tree_output = ""
+        syntax_errors = str(e)
     
     return {
         "tokens": "\n".join(tokens_output),
-        "parse_tree": str(result),
+        "parse_tree": parse_tree_output,
         "intermediate_code": intermediate_code_output,
-        "symbol_table": str(symbol_table)
+        "symbol_table": symbol_table_output,
+        "syntax_errors": syntax_errors
     }
 
 if __name__ == "__main__":
